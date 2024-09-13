@@ -1,0 +1,107 @@
+.header{
+    background-color: aqua;
+    width: 100%;
+    height:100px;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  .footer{
+    background-color: lime;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    
+  }
+  .content{
+    padding: 100px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    position: absolute;
+    top: 300px;
+    text-align: center;
+  }
+  .tai-nghe{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(23, 150, 131);
+  }
+  .demons{
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .demons img{
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .button-price{
+    flex: 0.3;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border: 3px solid pink;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .logo{
+    
+    border-radius: 50%;
+    height: 100%;
+  }
+  .head-img{
+    flex: 1;
+    border: 5px solid;
+  }
+  .head-title{
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 40px;
+    gap: 10px;
+  }
+  .web-name{
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid white;
+    background-color: seagreen;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .menu:hover{
+    background-color: lime;
+    transform: scale(1.1, 1);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+  }
+  .button-price:hover{
+    background-color: rgb(176, 79, 79);
+    transform: scale(1.1, 1);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+  }
